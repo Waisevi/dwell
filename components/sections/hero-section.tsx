@@ -14,7 +14,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-organized-space.webp"
+          src="/images/hero-organized-space.jpg"
           alt="Beautifully organized living space"
           fill
           className="object-cover"

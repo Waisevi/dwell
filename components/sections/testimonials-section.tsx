@@ -35,16 +35,16 @@ const beforeAfterCases = [
     before: "A cluttered 450 sq ft studio with no storage solutions",
     after: "A functional, airy space with hidden storage and designated zones",
     location: "Murray Hill",
-    imageBefore: "/images/transformations/studio-before.webp",
-    imageAfter: "/images/transformations/studio-after.webp",
+    imageBefore: "/images/transformations/studio-before.png",
+    imageAfter: "/images/transformations/studio-after.png",
   },
   {
     title: "Family Closet Overhaul",
     before: "Overflowing walk-in closet with no visible floor space",
     after: "Color-coordinated, accessible wardrobe with 40% more capacity",
     location: "Park Slope",
-    imageBefore: "/images/transformations/closet-before.webp",
-    imageAfter: "/images/transformations/closet-after.webp",
+    imageBefore: "/images/transformations/closet-before.png",
+    imageAfter: "/images/transformations/closet-after.png",
   },
 ]
 

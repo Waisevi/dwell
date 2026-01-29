@@ -20,7 +20,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="relative h-12 w-48">
             <Image
-              src="/images/logo.webp"
+              src="/images/logo.png"
               alt="DwellWell NYC"
               fill
               className="object-contain object-left"

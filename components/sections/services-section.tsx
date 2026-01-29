@@ -14,7 +14,7 @@ const services = [
       "Decluttering guidance—keep only what serves you",
       "Sustainable systems that stay organized",
     ],
-    image: "/images/organized-closet.jpg",
+    image: "/images/organized-closet.webp",
   },
   {
     title: "Move-In Unpacking",
@@ -26,7 +26,7 @@ const services = [
       "Everything placed with purpose and style",
       "Walk into your new home, not a warehouse",
     ],
-    image: "/images/organized-kitchen.jpg",
+    image: "/images/organized-kitchen.webp",
   },
   {
     title: "Prep to Sell",
@@ -38,7 +38,7 @@ const services = [
       "Professional staging that photographs beautifully",
       "Faster sales at better prices",
     ],
-    image: "/images/hero-organized-space.jpg",
+    image: "/images/hero-organized-space.webp",
   },
 ]
 

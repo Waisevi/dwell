@@ -14,11 +14,12 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-organized-space.jpg"
+          src="/images/hero-organized-space.webp"
           alt="Beautifully organized living space"
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-background/60" />
       </div>

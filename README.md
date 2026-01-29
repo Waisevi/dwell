@@ -16,6 +16,17 @@ Your project is live at:
 
 **[https://vercel.com/stasmaxs-projects/v0-dwell-well-landing-page](https://vercel.com/stasmaxs-projects/v0-dwell-well-landing-page)**
 
+## Image optimization (WebP)
+
+Images are referenced as `.webp` for better performance. After cloning or before first build, generate WebP files from sources in `public/images`:
+
+```bash
+pnpm install
+pnpm run images:webp
+```
+
+This converts all `.jpg` and `.png` in `public/images` to `.webp` (originals are kept).
+
 ## Build your app
 
 Continue building your app on:

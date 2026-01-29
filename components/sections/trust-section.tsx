@@ -10,11 +10,11 @@ export function TrustSection() {
           </h2>
           <div className="relative w-full max-w-5xl aspect-[10/1]">
             <Image
-              src="/images/press-banner.jpg"
+              src="/images/press-banner.webp"
               alt="Featured in Living, Washington Post, Real Simple, NYT, House Beautiful, Glamour, InStyle"
               fill
               className="object-contain"
-              priority
+              sizes="(max-width: 1280px) 100vw, 1280px"
             />
           </div>
         </div>

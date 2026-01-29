@@ -1,13 +1,13 @@
 "use client";
 
 import { createContext, useContext, useState, useCallback } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { LeadForm } from "@/components/forms/lead-form";
+import dynamic from "next/dynamic";
+
+const ConsultationModalContent = dynamic(
+  () =>
+    import("./consultation-modal-content").then((m) => m.ConsultationModalContent),
+  { ssr: false }
+);
 
 type ConsultationModalContextValue = {
   openModal: () => void;
@@ -33,23 +33,19 @@ export function ConsultationModalProvider({
   children: React.ReactNode;
 }) {
   const [open, setOpen] = useState(false);
-  const openModal = useCallback(() => setOpen(true), []);
+  const [hasOpened, setHasOpened] = useState(false);
+  const openModal = useCallback(() => {
+    setHasOpened(true);
+    setOpen(true);
+  }, []);
   const closeModal = useCallback(() => setOpen(false), []);
 
   return (
     <ConsultationModalContext.Provider value={{ openModal, closeModal }}>
       {children}
-      <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent
-          showClose={true}
-          className="p-0 gap-0 max-w-md pt-12 px-6 pb-6 sm:px-8 sm:pb-8"
-        >
-          <DialogHeader className="sr-only">
-            <DialogTitle>Book a Consultation</DialogTitle>
-          </DialogHeader>
-          <LeadForm />
-        </DialogContent>
-      </Dialog>
+      {hasOpened && (
+        <ConsultationModalContent open={open} onOpenChange={setOpen} />
+      )}
     </ConsultationModalContext.Provider>
   );
 }

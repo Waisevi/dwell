@@ -1,7 +1,9 @@
+"use client"
+
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from "lucide-react"
+import { useConsultationModal } from "@/components/consultation-modal"
 
 const services = [
   {
@@ -43,6 +45,8 @@ const services = [
 ]
 
 export function ServicesSection() {
+  const { openModal } = useConsultationModal()
+
   return (
     <section id="services" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
@@ -75,6 +79,7 @@ export function ServicesSection() {
                   fill
                   className="object-cover rounded-sm"
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  loading="lazy"
                 />
               </div>
 
@@ -104,13 +109,11 @@ export function ServicesSection() {
                 </ul>
 
                 <Button
-                  asChild
+                  onClick={openModal}
                   className="bg-accent text-accent-foreground hover:bg-accent/90 px-6 py-5 text-sm tracking-wide group"
                 >
-                  <Link href="#contact">
-                    Get Started
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  Get Started
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
             </div>

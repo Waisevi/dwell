@@ -25,6 +25,7 @@ export function Header() {
               fill
               className="object-contain object-left"
               priority
+              sizes="(max-width: 768px) 120px, 192px"
             />
           </Link>
 

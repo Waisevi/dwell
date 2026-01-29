@@ -155,6 +155,8 @@ export function TestimonialsSection() {
                       alt={`Before: ${caseStudy.before}`}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      loading="lazy"
                     />
                     <div className="absolute bottom-3 left-3 bg-black/60 text-white px-2 py-1 text-[10px] items-center tracking-widest font-sans rounded uppercase">Before</div>
                   </div>
@@ -164,6 +166,8 @@ export function TestimonialsSection() {
                       alt={`After: ${caseStudy.after}`}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      loading="lazy"
                     />
                     <div className="absolute bottom-3 right-3 bg-primary text-primary-foreground px-2 py-1 text-[10px] items-center tracking-widest font-sans rounded uppercase">After</div>
                   </div>

@@ -15,6 +15,7 @@ export function TrustSection() {
               fill
               className="object-contain"
               sizes="(max-width: 1280px) 100vw, 1280px"
+              loading="lazy"
             />
           </div>
         </div>

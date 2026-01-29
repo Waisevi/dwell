@@ -186,9 +186,6 @@ importers:
       baseline-browser-mapping:
         specifier: ^2.9.19
         version: 2.9.19
-      cwebp-bin:
-        specifier: ^8.0.0
-        version: 8.0.0
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
@@ -198,9 +195,6 @@ importers:
       postcss:
         specifier: ^8.5
         version: 8.5.6
-      sharp:
-        specifier: ^0.33.5
-        version: 0.33.5
       tailwindcss:
         specifier: ^4.1.9
         version: 4.1.18
